@@ -21,6 +21,7 @@ while not end_of_game:
             display[position] = letter
 
     if guessed not in selected_choice:
+        print(f"you guessed {guessed}, that's not in the word. You lose a life")
         lives -= 1
         if lives == 0:
             end_of_game = True
